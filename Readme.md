@@ -1,1 +1,0 @@
-# Day 1 - What Is Web Design & How the Web Really Works
