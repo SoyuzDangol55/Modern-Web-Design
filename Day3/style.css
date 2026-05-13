@@ -1,13 +1,42 @@
+/*Color choice Matters-> Good contrast improves
+    > Readability
+    > Accessibility
+    > User confort
+
+> If text is hard to read the design has failed
+*/
+
 body{       /*this part is denoted as -> Selector*/
 /*below part is denoted as property*/
-background-color: brown;    /*brown is the value and background-color is property*/
+background-color: rgb(44, 8, 8);    /*brown is the value and background-color is property*/
 font-family:'Times New Roman', Times, serif;  /*This Creates a Font Stack like every thing you write will be on Times new Roman*/
 }
+header,section,footer{
+    max-width: 800px;
+}
 
+header{
+    background-color: aliceblue;
+    margin:80px 20px 40px 380px;     /*1)Top ,2)right ,3)Buttom ,4)left*/            /*Margin Creates seperation of the element*/       
+    text-align: center;             /*Align item into the center*/
+}
 p{
     font-size:larger;         /*Adds font size according to your preference*/
-    color:aliceblue;      /*Adds color to the text*/
+    color:rgb(0, 0, 0);      /*Adds color to the text*/
 }
+section{
+    background-color:wheat;    /*a Particular section background color change*/
+    padding:10px 10px 10px 30px;  /*1)Top ,2)right ,3)Buttom ,4)left*/              /*Whereas padding creates breathing room inside the element*/
+    margin:80px 20px 40px 380px;
+}
+
+footer{
+    background-color:antiquewhite;
+    font-size: large;
+    text-align:center;
+    margin:30px 10px 10px 380px;     /*1)Top ,2)right ,3)Buttom ,4)left*/  
+    padding:10px 0px 10px 0px;      /*1)Top ,2)right ,3)Buttom ,4)left*/  
+}   
 
 
 
