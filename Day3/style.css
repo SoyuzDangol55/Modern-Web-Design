@@ -1,4 +1,13 @@
 body{       /*this part is denoted as -> Selector*/
 /*below part is denoted as property*/
 background-color: brown;    /*brown is the value and background-color is property*/
+font-family:'Times New Roman', Times, serif;  /*This Creates a Font Stack like every thing you write will be on Times new Roman*/
 }
+
+p{
+    font-size:10px;         /*Adds font size according to your preference*/
+    color:aliceblue;      /*Adds color to the text*/
+}
+
+
+
