@@ -1,0 +1,13 @@
+body{
+    background-color:rgb(128, 211, 183);
+    font-family:'Times New Roman', Times, serif;
+}
+
+button{
+    background-color: black;
+    color:white;
+    padding:20px 40px 20px 30px; /*1)Top,   2)right,   3)buttom,  4)left)*/
+    border-radius:50px;
+    text-align: center;
+    margin:0px 0px 0px 10px; /*1)Top,   2)right,   3)buttom,  4)left)*/    
+}
