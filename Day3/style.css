@@ -12,7 +12,7 @@ background-color: rgb(44, 8, 8);    /*brown is the value and background-color is
 font-family:'Times New Roman', Times, serif;  /*This Creates a Font Stack like every thing you write will be on Times new Roman*/
 }
 header,section,footer{
-    max-width: 800px;
+    max-width:1500px;
 }
 
 header{
