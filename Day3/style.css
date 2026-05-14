@@ -17,7 +17,7 @@ header,section,footer{
 
 header{
     background-color: aliceblue;
-    margin:80px 20px 40px 380px;     /*1)Top ,2)right ,3)Buttom ,4)left*/            /*Margin Creates seperation of the element*/       
+    margin:80px 20px 40px auto;     /*1)Top ,2)right ,3)Buttom ,4)left*/            /*Margin Creates seperation of the element*/       
     text-align: center;             /*Align item into the center*/
 }
 p{
@@ -27,14 +27,14 @@ p{
 section{
     background-color:wheat;    /*a Particular section background color change*/
     padding:10px 10px 10px 30px;  /*1)Top ,2)right ,3)Buttom ,4)left*/              /*Whereas padding creates breathing room inside the element*/
-    margin:80px 20px 40px 380px;
+    margin:80px 20px 40px auto;
 }
 
 footer{
     background-color:antiquewhite;
     font-size: large;
     text-align:center;
-    margin:30px 10px 10px 380px;     /*1)Top ,2)right ,3)Buttom ,4)left*/  
+    margin:30px 10px 10px auto;     /*1)Top ,2)right ,3)Buttom ,4)left*/   /*why auto because many phones are only around 320px,360,390 and if we put more pixels value it messes up the mobile view*/
     padding:10px 0px 10px 0px;      /*1)Top ,2)right ,3)Buttom ,4)left*/  
 }   
 
