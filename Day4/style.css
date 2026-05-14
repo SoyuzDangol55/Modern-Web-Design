@@ -1,0 +1,49 @@
+/*What is CSS Selector -> A selector tells the browser which HTML Element a style rule should apply to*/
+body{ /*This means select everything and change the body background-color*/
+    background-color: antiquewhite;         
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*Read Selector like Sentence*/
+header h1{  /*Select H1 inside the header and style the below property*/
+    background-color:azure;
+    color:black;
+    text-align:center;
+    font-style: italic;
+    padding:10px 0px 10px 0px; /*top right buttom left*/
+}
+
+/*Class Selector*/
+.hightlight{    /*Class Selector starts with dot .and class name hightlight .hightlight*/
+    background-color:yellow;            /*Why Class -> 1.Reuse Style 2.Avoid Duplication 3.Stay Flexible*/
+    padding:10px 0px 10px 10px;
+}
+
+/*id selector*/
+#unique{        /*ID starts with # and must be unique like one main section one special Area*/
+     background-color:yellowgreen;  /*Don't over use ID*/
+       padding:10px 0px 10px 10px;  
+}
+
+
+/*Specificity -> More Specific selector override less specific ones like*/
+    /*here we can see how the class selector property got on use insted of Element Selector*/
+        /*weakest to strongest->>>> 1. Element Selector(p) 2.Class Selector(.hightlight) then after hightest priority-> ID Selector*/
+section p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}   
+
+.hightlight{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*Order Matters -> IF the selectors have equal speficity the last rule applies*/
+.Hello{
+    background-color:rgb(75, 48, 16);
+    color: blueviolet;
+}
+.Hello{
+    background-color:bisque ;
+    color:black
+}
