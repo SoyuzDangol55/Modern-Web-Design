@@ -32,7 +32,10 @@ section p{
     padding:10px 20px; /*Top/bottom , left/right*/
     margin:10px 10px;  /*-> Top/bottom , left/right*/
 }
-
+section img{
+    height:auto;
+    width:200px;
+}
 section{
     /*width:200px; -> Add Width to the Section*/
     padding:20px; /*-> Helps in creating space between the content and the border of the section*/ 
