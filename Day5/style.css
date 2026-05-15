@@ -1,5 +1,47 @@
-/**/
+/*The Four Parts of the Box Model
+From the inside out:
+  Content — text or image
+  Padding — space inside the element
+  Border — outline around the element
+  Margin — space outside the element 
+*/
 body{
     background-color: blanchedalmond;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head{
+    text-align:center;
+    background-color: cadetblue;
+    padding:10px; /*Overall spacing gets applied in top right buttom left*/
+}
+.paragraph{
+    /*padding:50px;-> This pushes the content away from the border*/
+    /*padding-top:20px -> this pushes the content away from the top border;*/
+    /*padding-right:20px; -> This pushes the content away from the right of the border*/
+    /*padding-left:20px; -> This pushes the content away from the left side of the border*/
+    /*padding-bottom:20px -> This pushes the content away from the bottom of the border;*/
+    padding:10px 0px 10px 30px; /*Top right bottom left*/
+    font-size: larger;
+    color:white;
+    background-color: rgb(38, 52, 65); 
+}
+
+section p{
+    background-color:rgb(53, 36, 39);
+    color:white;
+    padding:10px 20px; /*Top/bottom , left/right*/
+    margin:10px 10px;  /*-> Top/bottom , left/right*/
+}
+
+section{
+    /*width:200px; -> Add Width to the Section*/
+    padding:20px; /*-> Helps in creating space between the content and the border of the section*/ 
+    border:10px dotted rgb(172, 3, 3); /*10px->border size , solid -> Line Type , black-> color*/
+}
+header{
+    border:10px solid pink; /*10px->border size , solid -> Line Type , black-> color*/
+}
+footer{
+    border:10px solid yellow;   /*10px->border size , solid -> Line Type , black-> color*/
+    text-align:center;
 }
