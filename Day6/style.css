@@ -1,0 +1,45 @@
+body{
+    background-color: chocolate;
+    font-family:'Times New Roman', Times, serif;
+}
+
+header h1{
+    border:10px solid rgb(80, 34, 34);
+    padding:10px 0px 10px 0px;
+    text-align: center;
+}
+header p{
+    border:10px solid rgb(31, 31, 13);
+    padding:10px 0px 10px 0px;
+    text-align: end;
+    font-size:larger;
+}
+
+.section1{
+    border:5px solid cornflowerblue;
+    width:200px;
+     
+}
+.section1 img{
+    width:200px;
+}
+nav ul{
+    display:flex;
+    justify-content:start;
+    gap:10px;
+    list-style:none;
+}
+nav li a{
+    text-decoration:none;
+     border:5px solid burlywood;
+     color:black;
+     padding:10px;
+}
+
+footer p{
+    text-align:center;
+    background-color: rgb(23, 47, 90);
+    color:white;
+    padding:10px;
+
+}
