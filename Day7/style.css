@@ -1,0 +1,130 @@
+
+body{
+    background-color:darkblue;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container{     
+    display:flex;   /*Flex helps to put the content side by side / horizontally*/
+    /*Children are directly affected*/
+    flex-direction:row;     /*display the content in the form of row;*/
+
+    justify-content:center; /*Moves the all item to the center of the screen*/
+}
+
+.container{
+    align-items:center;  /*Aligns items at the start of the cross axis*/
+}
+
+.box{
+    width:180px;
+    height:auto;
+    background-color:tomato;
+    border:2px solid black;
+    margin:10px;
+}
+.box h1{
+    text-align: center;
+}
+
+.container2{     
+    display:flex;   /*Flex helps to put the content side by side / horizontally*/
+    /*Children are directly affected*/
+   
+    flex-direction:column;  /*display the content in the column*/
+
+     justify-content:space-around;
+        height:400px;
+
+     
+     
+}
+
+.box2{
+    width:180px;
+    height:auto;
+    background-color:rgb(29, 23, 22);
+    color:white;
+    border:2px solid black;
+    margin:10px;
+}
+.box2 h1{
+    text-align: center;
+}
+
+
+.container3{     
+    display:flex;   /*Flex helps to put the content side by side / horizontally*/
+    /*Children are directly affected*/
+
+    flex-direction:row-reverse;     /*display in the end of the screen and also reverse the content */
+    justify-content:flex-end;           /*Moves the items to the end of the main axis*/
+
+}
+
+.box3{
+    width:180px;
+    height:auto;
+    background-color:rgb(20, 62, 70);
+    color: white;
+    border:2px solid black;
+    margin:10px;
+}
+.box3 h1{
+    text-align: center;
+}
+
+
+.container4{     
+    display:flex;   /*Flex helps to put the content side by side / horizontally*/
+    /*Children are directly affected*/
+
+    flex-direction:column-reverse;      /*Display the content in column and child are reversed*/
+
+    justify-content:flex-end;
+}
+
+.box4{
+    width:180px;
+    height:auto;
+    background-color:rgb(95, 24, 92);
+    border:2px solid black;
+    color:yellow;
+    margin:10px;
+}
+.box4 h1{
+    text-align: center;
+}
+
+
+
+.nav{
+    display:flex;
+    /*justify-content:space-around;*/
+    /*justify-content:center;*/
+    justify-content:space-evenly;
+    /*flex-direction:column;*/
+    align-items:center;
+    padding:20px;
+}
+.nav a{
+    text-decoration:none;
+    color:white;
+
+}
+
+.nav a:hover{
+    background-color:red;
+    padding:10px;
+}
+
+
+/*Replace Margin*/
+.replacemarg{
+    display:flex;
+    gap:20px;
+}
+
+.replacemarg p{
+    color:yellow;
+}
