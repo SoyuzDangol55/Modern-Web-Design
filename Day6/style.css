@@ -11,7 +11,7 @@ header h1{
 header p{
     border:10px solid rgb(31, 31, 13);
     padding:10px 0px 10px 0px;
-    text-align: end;
+    text-align:center;
     font-size:larger;
 }
 
