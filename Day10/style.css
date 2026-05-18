@@ -1,0 +1,58 @@
+/* 1. When to Use Grid vs Flexbox
+Use Flexbox When:
+•  You’re laying items out in a single row or column
+•  Alignment and spacing are the main concern
+•  Content size should dictate layout
+Use Grid When:
+•  You control rows and columns
+•  The layout structure comes first
+•  You’re building page sections or full layouts
+Flexbox aligns content. Grid defines structure. */
+
+
+
+/*Here we can see how the flex box works either it shows in vertical or horizontal
+    [box1] [box2] [box3] or
+    [box1]
+    [box2]
+    [box3]
+
+*/
+body{
+    background-color: lightcoral;
+    font-family:'Times New Roman', Times, serif;
+}
+.flex-container{
+display:flex;
+justify-content:space-evenly;
+flex-flow:column wrap;
+}
+.box{
+    background-color: aliceblue;
+    padding:30px;
+    border:2px solid black;
+    text-align:center;
+}
+
+@media (min-width:480px){
+.flex-container{
+    justify-content:space-evenly;
+    flex-flow:row wrap;
+}
+}
+
+
+.grid-container{
+    display:grid;
+    grid-template-columns:1fr 1fr; /*fr -> Fractional Space like if we put 1fr 1fr 1fr there will be 3 boxes in the row and 1 in the column*/
+    gap:50px;
+    padding:50px;
+}
+
+
+.item{
+    background-color:blanchedalmond;
+    color:black;
+    padding:80px;
+    text-align:center;
+}
