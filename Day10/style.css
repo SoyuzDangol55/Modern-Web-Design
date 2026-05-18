@@ -39,6 +39,11 @@ flex-flow:column wrap;
     justify-content:space-evenly;
     flex-flow:row wrap;
 }
+
+.grid-container{
+    gap:150px;
+    padding:50px;
+}
 }
 
 
@@ -46,13 +51,13 @@ flex-flow:column wrap;
     display:grid;
     grid-template-columns:1fr 1fr; /*fr -> Fractional Space like if we put 1fr 1fr 1fr there will be 3 boxes in the row and 1 in the column*/
     gap:50px;
-    padding:50px;
+    padding:5px;
 }
 
 
 .item{
     background-color:blanchedalmond;
     color:black;
-    padding:80px;
+    padding:50px;
     text-align:center;
 }
