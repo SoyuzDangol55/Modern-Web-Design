@@ -1,0 +1,27 @@
+body{
+    background:linear-gradient(to right , rgb(117, 34, 34), rgb(36, 10, 10));
+    font-family:'Times New Roman', Times, serif;
+}
+
+header h1{
+    text-align:center;
+    color:rgb(245, 209, 209);
+}
+
+section a{
+    color:white;
+    text-decoration:none;
+}
+
+section button{
+    background-color: black;
+    color:white;
+    padding:8px;
+    border:2px solid white;
+    cursor:col-resize;
+}
+
+section button:hover{
+    background-color:white;
+    color:black;
+}
