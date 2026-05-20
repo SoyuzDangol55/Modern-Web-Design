@@ -14,14 +14,22 @@
     </header>
 
     <section>
-        <label for="Name">Name</label>
-        <input type="text" id="name" placeholder="Name">
-        <label for="Email" id="Email">Email</label>
-        <input type="text" id="Email" placeholder="Email">
+        <form id="myForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Email">
+            <button type="submit">Submit</button>
+        </form>
+
+        <br><br><br>
         <button id="btn">Click1</button>
         <button id="btn2">Click2</button>
 
         <p id="message">Nothing have Happened</p>
+
+
+        <p id="magic"> Magic </p>
     </section>
 
     <footer>
@@ -32,18 +40,30 @@
         const button = document.getElementById('btn');
         const button2 = document.getElementById('btn2');
         var msg = document.getElementById('message');
-
+        let msg2 = document.getElementById('magic');
+        const submit = document.getElementById('submit');
         button.addEventListener('click', function () {
-           msg.textContent= "First button clicked";
+            msg.textContent = "First button clicked";
         });
 
 
         //Understand Event Handlers
-        function handleClick(){
+        function handleClick() {
             msg.textContent = "Second button clicked";
         }
-        button2.addEventListener('click',handleClick);
+        button2.addEventListener('click', handleClick);
 
+
+        //Mouseover event
+        msg2.addEventListener('mouseover', function () {
+            msg2.textContent = "Soyuz dangol";
+        });
+
+
+        submit.addEventListener('submit', function (event) {
+            event.preventDefault();
+            console.log("Form submitted");
+        });
     </script>
 
 </body>
