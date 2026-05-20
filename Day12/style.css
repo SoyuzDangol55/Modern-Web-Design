@@ -25,3 +25,8 @@ section button:hover{
     background-color:white;
     color:black;
 }
+.form1 label{
+    color:white;
+    font-size: larger;
+}
+
