@@ -62,5 +62,6 @@ Each folder contains practice files and mini projects from that day.
 - [X] Day 11
 - [X] Day 12
 - [X] Day 13
+- [X] Day 14
 
 ---
