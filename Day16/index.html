@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-16 of vibe Code Session</title>
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Functions:
+            Reusable Logic & Clean Code</h1>
+    </header>
+
+    <section>
+        <h1 id="first"></h1>
+        <button id="btn1">Click me</button>
+    </section>
+    <hr>
+    <section>
+        <label for="Name">Enter your name</label>
+        <input type="text" id="name" placeholder="Name" />
+
+        <label for="gender"> Enter your gender</label>
+        <select name="gender" id="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <button id=btn2>Click</button>
+    </section>
+
+    <div>
+        <h2 id="display"></h2>
+    </div>
+
+    <script>
+        const txt = document.getElementById('first');
+        let btn = document.getElementById('btn1');
+        function sayHello(n, b) {
+            txt.textContent = "Hello \t" + n + "\t" + b;
+        }
+
+        btn.addEventListener('click', function () {        //we cannot directly call the method/function here like 'click',sayHello-> X we should call from function
+            sayHello("Suresh", "Mama");
+        });
+
+
+        let btn2 = document.getElementById('btn2');
+        let dis = document.getElementById('display');
+        btn2.addEventListener('click', display)
+
+        function display() {
+            let name = document.getElementById('name').value;
+            let gender = document.getElementById('gender').value;
+
+            if (name !== "" && gender !== "") {
+                dis.textContent = "Helloooooo \t" + "\tName: \t" + name + " \tGender: \t" + gender;
+            } else {
+                dis.textContent = "Please Enter the Field!!!"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
