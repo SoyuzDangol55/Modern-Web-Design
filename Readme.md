@@ -39,7 +39,7 @@ Each folder contains practice files and mini projects from that day.
 ---
 
 ## Goals
-- Improve web design skills
+- Improve web design skill
 - Build consistency through daily practice
 - Learn responsive layouts
 - Create modern UI designs
