@@ -1,0 +1,22 @@
+body{
+    background:linear-gradient(0deg, blue, green 40%, red);
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    text-align:center;
+}
+.hello{
+    display:flex;
+    flex-flow:column wrap;
+}
+.btn2{
+    background-color: darkcyan;
+    color:white;
+    padding:10px;
+}
+@media (min-width: 480px){
+    .hello{
+        flex-flow:row wrap;
+    }
+}
