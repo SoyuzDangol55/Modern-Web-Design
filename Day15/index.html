@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-15 of vibe code session</title>
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Logic: Conditions,
+            Decisions & User Feedback</h1>
+    </header>
+
+    <section>
+        <h2>Check if you are eligible for voting??</h2>
+        <form>
+            <Label for="age">Age??</Label><br>
+            <input type="text" id="age" placeholder="Ageee">
+
+            <label for="citizenship">citizenship??</label>
+            <select name="citizenship" id="value">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+
+            <h1 id="display"></h1>
+
+            <button id="enter">Check</button>
+        </form>
+    </section>
+    <hr>
+
+
+
+
+    <script>
+        let valid = true;   //boolean Values
+        let notValid = false; //boolean values
+        let dis = document.getElementById('display');
+        let btn = document.getElementById('enter');
+        function eligible(event) {
+            let age = Number(document.getElementById('age').value);
+            let citizenship = document.getElementById('value').value;
+            event.preventDefault();
+            // Normal If Else with logical AND operator
+            // if (age >= 18 && citizenship == "Yes") {
+            // if(age>=18 || citizenship == "Yes"){
+            if (age >= 18 && citizenship !== "No") {
+                dis.textContent = valid;
+            } else {
+                dis.textContent = notValid;
+            }
+
+
+        }
+
+        btn.addEventListener('click', eligible);
+    </script>
+
+</body>
+
+</html>
