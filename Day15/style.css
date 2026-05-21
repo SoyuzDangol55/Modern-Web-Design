@@ -1,0 +1,32 @@
+body{
+    background:linear-gradient(to right,rgb(41, 93, 47),rgb(7, 31, 10));
+    font-family:'Times New Roman', Times, serif;
+}
+header{
+    text-align:center;
+    color: rgb(216, 216, 216);
+}
+.main{
+    border:2px solid white;
+     color:white; 
+     padding:20px;  
+}
+section{
+    display:flex;
+    flex-flow: column wrap;
+}
+select{
+    background-color:black;
+    color:white;
+    padding:10px;
+}
+@media (min-width: 480px){
+    section{
+        flex-direction:row;
+    }
+
+    section h2{
+        text-align:center;
+    }
+
+}
